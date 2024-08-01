@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('wins.webp');
+    background-size: cover;        
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-attachment: fixed;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.desktop {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Three columns with 100px each */
+    grid-template-rows: repeat(4, 100px); /* Four rows with 100px each */
+    gap: 15px; /* Gap between the grid items */
+    padding: 20px;
+    justify-content: start; /* Align grid items to the start horizontally */
+    justify-items: center; /* Center grid items horizontally */
+    align-items: start; /* Align grid items to the start vertically */
+}
+
+.icons a img {
+    width: 70px; /* Adjust the icon size */
+    height: 70px;
+    border-radius: 10%; /* Slightly rounded corners */
+}
+
+.taskbar {
+    background-color: #f1f0f0; /* Dark background color for the taskbar */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between elements */
+    padding: 0 10px;
+    border-top: 1px solid #070606; /* Add a border at the top */
+}
+
+.taskbar-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.taskbar-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.search-input {
+    width: 200px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
